@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Strategy Forge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="text-center py-16 bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg animate-fade-in">
+    <h1 class="text-5xl font-bold mb-4">The Strategy Forge</h1>
+    <p class="text-xl mb-6">AI, Cybersecurity, and Digital Insight—Tempered by Experience, Delivered with Clarity.</p>
+    <div class="space-x-4">
+      <a href="#contact" class="bg-white text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Book a Strategy Session</a>
+      <a href="#portfolio" class="bg-transparent border border-white px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition">View Portfolio</a>
+    </div>
+  </header>
+
+  <section id="about" class="px-8 py-12 max-w-3xl mx-auto animate-slide-in">
+    <h2 class="text-3xl font-semibold mb-4">Forged Through Fire, Sharpened by Experience</h2>
+    <p class="text-lg leading-relaxed">James Richmond, a former USAF technician, educator, and cybersecurity M.S. holder, now advises mission-critical organizations on AI adoption, cyber resilience, and digital transformation. With over 20 years of service across technical, educational, and strategic domains, James translates chaos into clarity and vision into results.</p>
+  </section>
+
+  <section id="services" class="bg-gray-800 px-8 py-12 animate-fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">What We Forge</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">Risk Readiness Review</h3>
+        <p>3-week security audit & roadmap. Perfect for orgs seeking clarity fast.<br>→ Includes CRSTIL-based IR simulation</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">Zero Trust Blueprint</h3>
+        <p>NIST/ISO-aligned network & cloud security architecture for orgs ready to level up.<br>→ 1-month roadmap + 1:1 sessions</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">AI Assistant Design</h3>
+        <p>Custom GPT-based workflows for ops, planning, or customer support.<br>→ Includes fine-tuning, vector search, and launch support</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="px-8 py-12 max-w-4xl mx-auto animate-slide-in">
+    <h2 class="text-3xl font-semibold text-center mb-8">Work We’re Proud Of</h2>
+    <ul class="space-y-4 text-lg list-disc list-inside">
+      <li>Redesigning a Zero Trust Network for a School District</li>
+      <li>Simulating a Cloud Security Breach for a Mid-Market Client</li>
+      <li>Designing an AI-Powered Financial Insights Assistant</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="bg-gray-800 px-8 py-12 text-center animate-fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Let’s Forge Your Strategy</h2>
+    <p class="mb-2">Email: <a href="mailto:jamestrichmond@gmail.com" class="text-indigo-400 hover:underline">jamestrichmond@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/jamestrichmond" class="text-indigo-400 hover:underline" target="_blank">James Richmond</a></p>
+  </section>
+
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fade-in {
+      animation: fade-in 2s ease-in forwards;
+    }
+
+    @keyframes slide-in {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-in {
+      animation: slide-in 2s ease-out forwards;
+    }
+  </style>
+</body>
+</html>
