@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Strategy Forge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="text-center py-16 bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg animate-fade-in">
+    <h1 class="text-5xl font-bold mb-4">The Strategy Forge</h1>
+    <p class="text-xl mb-6">AI, Cybersecurity, and Digital Insight—Tempered by Experience, Delivered with Clarity.</p>
+    <div class="space-x-4">
+      <a href="https://calendly.com/jamestrichmond/free-strategy-session" target="_blank" class="bg-white text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Book a Strategy Session</a>
+      <a href="newsletter.html" class="bg-transparent border border-white px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition">Join Newsletter</a>
+    </div>
+  </header>
+
+  <section id="about" class="px-8 py-12 max-w-3xl mx-auto animate-slide-in">
+    <h2 class="text-3xl font-semibold mb-4">Forged Through Fire, Sharpened by Experience</h2>
+    <p class="text-lg leading-relaxed">James Richmond, a former USAF technician, educator, and cybersecurity M.S. holder, now advises mission-critical organizations on AI adoption, cyber resilience, and digital transformation. With over 20 years of service across technical, educational, and strategic domains, James translates chaos into clarity and vision into results.</p>
+  </section>
+
+  <section id="services" class="bg-gray-800 px-8 py-12 animate-fade-in">
+    <h2 class="text-3xl font-semibold text-center mb-10">What We Forge</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">Risk Readiness Review</h3>
+        <p>3-week security audit & roadmap. Perfect for orgs seeking clarity fast.<br>→ Includes CRSTIL-based IR simulation</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">Zero Trust Blueprint</h3>
+        <p>NIST/ISO-aligned network & cloud security architecture for orgs ready to level up.<br>→ 1-month roadmap + 1:1 sessions</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-2">AI Assistant Design</h3>
+        <p>Custom GPT-based workflows for ops, planning, or customer support.<br>→ Includes fine-tuning, vector search, and launch support</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="px-8 py-12 max-w-4xl mx-auto animate-slide-in">
+    <h2 class="text-3xl font-semibold text-center mb-8">Work We’re Proud Of</h2>
+    <ul class="space-y-4 text-lg list-disc list-inside">
+      <li><a href="zero-trust.html" class="text-indigo-400 hover:underline">Redesigning a Zero Trust Network for a School District</a></li>
+      <li><a href="ai-finance.html" class="text-indigo-400 hover:underline">Designing an AI-Powered Financial Insights Assistant</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="bg-gray-800 px-8 py-12 text-center animate-fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Let’s Forge Your Strategy</h2>
+    <form action="https://formspree.io/f/mwkgyvle" method="POST" class="max-w-lg mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-3 rounded text-gray-900" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded text-gray-900" required>
+      <textarea name="message" placeholder="How can I help you?" rows="4" class="w-full mb-4 p-3 rounded text-gray-900" required></textarea>
+      <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 px-6 py-2 rounded font-semibold">Send Message</button>
+    </form>
+    <div class="mt-8">
+      <h3 class="text-xl font-semibold">Prefer to book a time?</h3>
+      <iframe src="https://calendly.com/jamestrichmond/free-strategy-session" width="100%" height="600" frameborder="0" class="mt-4 mx-auto"></iframe>
+    </div>
+    <div class="mt-12">
+      <h3 class="text-xl font-semibold">Join The Forge Dispatch</h3>
+      <form action="https://formspree.io/f/mwkgyvle" method="POST" class="mt-4">
+        <input type="email" name="email" placeholder="Enter your email" class="p-3 rounded text-gray-900 w-2/3" required>
+        <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 px-4 py-2 rounded font-semibold ml-2">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fade-in {
+      animation: fade-in 2s ease-in forwards;
+    }
+
+    @keyframes slide-in {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-in {
+      animation: slide-in 2s ease-out forwards;
+    }
+  </style>
+</body>
+</html>
