@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,33 +16,50 @@
   </header>
 
   <main class="max-w-3xl mx-auto space-y-8 bg-gray-800 p-6 rounded-lg shadow-lg">
-    <form action="https://formspree.io/f/xnndkpza" method="POST">
-      <div>
-        <label class="block text-lg mb-1">1. What's your name and role?</label>
-        <input name="name_role" type="text" required class="w-full p-3 rounded text-gray-900">
-      </div>
-      <div>
-        <label class="block text-lg mb-1">2. What company or organization are you with?</label>
-        <input name="company" type="text" required class="w-full p-3 rounded text-gray-900">
-      </div>
-      <div>
-        <label class="block text-lg mb-1">3. What's the #1 challenge you're facing right now?</label>
-        <textarea name="challenge" rows="3" required class="w-full p-3 rounded text-gray-900"></textarea>
-      </div>
-      <div>
-        <label class="block text-lg mb-1">4. Have you used AI in your business before?</label>
-        <textarea name="ai_usage" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
-      </div>
-      <div>
-        <label class="block text-lg mb-1">5. Do you have a cybersecurity framework in place?</label>
-        <textarea name="cyber_framework" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
-      </div>
-      <div>
-        <label class="block text-lg mb-1">6. What does success look like for this project?</label>
-        <textarea name="success" rows="3" required class="w-full p-3 rounded text-gray-900"></textarea>
-      </div>
+    <form id="onboarding-form" action="https://formspree.io/f/xnndkpza" method="POST" aria-label="Client onboarding form">
+      <section>
+        <label for="name_role" class="block text-lg mb-1">1. What's your name and role?</label>
+        <input id="name_role" name="name_role" type="text" required class="w-full p-3 rounded text-gray-900" aria-required="true">
+      </section>
+      <section>
+        <label for="company" class="block text-lg mb-1">2. What company or organization are you with?</label>
+        <input id="company" name="company" type="text" required class="w-full p-3 rounded text-gray-900" aria-required="true">
+      </section>
+      <section>
+        <label for="challenge" class="block text-lg mb-1">3. What's the #1 challenge you're facing right now?</label>
+        <textarea id="challenge" name="challenge" rows="3" required class="w-full p-3 rounded text-gray-900" aria-required="true"></textarea>
+      </section>
+      <section>
+        <label for="ai_usage" class="block text-lg mb-1">4. Have you used AI in your business before?</label>
+        <textarea id="ai_usage" name="ai_usage" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
+      </section>
+      <section>
+        <label for="cyber_framework" class="block text-lg mb-1">5. Do you have a cybersecurity framework in place?</label>
+        <textarea id="cyber_framework" name="cyber_framework" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
+      </section>
+      <section>
+        <label for="success" class="block text-lg mb-1">6. What does success look like for this project?</label>
+        <textarea id="success" name="success" rows="3" required class="w-full p-3 rounded text-gray-900" aria-required="true"></textarea>
+      </section>
       <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded font-semibold text-white">Submit Intake</button>
     </form>
+    <script>
+      const form = document.getElementById("onboarding-form");
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          window.location.href = "thank-you.html";
+        } else {
+          alert('❌ There was an error submitting your intake. Please try again.');
+        }
+      });
+    </script>
   </main>
 
   <footer class="text-center text-gray-400 mt-12">
