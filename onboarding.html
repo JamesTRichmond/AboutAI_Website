@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Onboarding - The Strategy Forge</title>
+  <meta name="description" content="Custom onboarding form for clients of The Strategy Forge. Designed by James Richmond.">
+  <meta name="keywords" content="client intake, onboarding, AI strategy form, cybersecurity questions, strategy forge">
+  <meta name="author" content="James Richmond">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans p-8">
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-indigo-400">🤖 Onboarding Assistant</h1>
+    <p class="text-xl mt-2 text-gray-300">Answer a few strategic questions to help us prepare the perfect first session.</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto space-y-8 bg-gray-800 p-6 rounded-lg shadow-lg">
+    <form action="https://formspree.io/f/mwkgyvle" method="POST" class="space-y-6">
+      <div>
+        <label class="block text-lg mb-1">1. What's your name and role?</label>
+        <input name="name_role" type="text" required class="w-full p-3 rounded text-gray-900">
+      </div>
+      <div>
+        <label class="block text-lg mb-1">2. What company or organization are you with?</label>
+        <input name="company" type="text" required class="w-full p-3 rounded text-gray-900">
+      </div>
+      <div>
+        <label class="block text-lg mb-1">3. What's the #1 challenge you're facing right now?</label>
+        <textarea name="challenge" rows="3" required class="w-full p-3 rounded text-gray-900"></textarea>
+      </div>
+      <div>
+        <label class="block text-lg mb-1">4. Have you used AI in your business before?</label>
+        <textarea name="ai_usage" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
+      </div>
+      <div>
+        <label class="block text-lg mb-1">5. Do you have a cybersecurity framework in place?</label>
+        <textarea name="cyber_framework" rows="2" class="w-full p-3 rounded text-gray-900"></textarea>
+      </div>
+      <div>
+        <label class="block text-lg mb-1">6. What does success look like for this project?</label>
+        <textarea name="success" rows="3" required class="w-full p-3 rounded text-gray-900"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded font-semibold text-white">Submit Intake</button>
+    </form>
+  </main>
+
+  <footer class="text-center text-gray-400 mt-12">
+    <a href="index.html" class="hover:underline text-indigo-400">← Back to Home</a>
+  </footer>
+</body>
+</html>
