@@ -1,136 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Strategy Forge</title>
-  <meta name="description" content="Cybersecurity, AI, and digital transformation consulting by James Richmond. Trusted by mission-critical organizations.">
-  <meta name="keywords" content="AI strategy, cybersecurity consulting, digital transformation, Zero Trust, GPT workflows, James Richmond">
-  <meta name="author" content="James Richmond">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <header class="text-center py-16 bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg animate-fade-in">
-    <h1 class="text-5xl font-bold mb-4">The Strategy Forge</h1>
-    <p class="text-xl mb-6">AI, Cybersecurity, and Digital Insight—Tempered by Experience, Delivered with Clarity.</p>
-    <div class="space-x-4">
-      <a href="https://calendly.com/jamestrichmond/free-strategy-session" target="_blank" class="bg-white text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Book a Strategy Session</a>
-      <a href="newsletter.html" class="bg-transparent border border-white px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition">Join Newsletter</a>
-      <a href="blog.html" class="bg-indigo-500 px-6 py-2 rounded-full font-semibold hover:bg-indigo-700 transition">Visit Blog</a>
-      <a href="onboarding.html" class="bg-purple-500 px-6 py-2 rounded-full font-semibold hover:bg-purple-700 transition">Start Onboarding</a>
-    </div>
-  </header>
-
-  <section id="about" class="px-8 py-12 max-w-3xl mx-auto animate-slide-in">
-    <h2 class="text-3xl font-semibold mb-4">Forged Through Fire, Sharpened by Experience</h2>
-    <p class="text-lg leading-relaxed">James Richmond, a former USAF technician, educator, and cybersecurity M.S. holder, now advises mission-critical organizations on AI adoption, cyber resilience, and digital transformation. With over 20 years of service across technical, educational, and strategic domains, James translates chaos into clarity and vision into results.</p>
-  </section>
-
-  <section id="services" class="bg-gray-800 px-8 py-12 animate-fade-in">
-    <h2 class="text-3xl font-semibold text-center mb-10">What We Forge</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-        <h3 class="text-2xl font-bold mb-2">Risk Readiness Review</h3>
-        <p>3-week security audit & roadmap. Perfect for orgs seeking clarity fast.<br>→ Includes CRSTIL-based IR simulation</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-        <h3 class="text-2xl font-bold mb-2">Zero Trust Blueprint</h3>
-        <p>NIST/ISO-aligned network & cloud security architecture for orgs ready to level up.<br>→ 1-month roadmap + 1:1 sessions</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-        <h3 class="text-2xl font-bold mb-2">AI Assistant Design</h3>
-        <p>Custom GPT-based workflows for ops, planning, or customer support.<br>→ Includes fine-tuning, vector search, and launch support</p>
+<body>
+  <section class="bg-gradient-to-r from-purple-600 to-purple-500 text-white py-16">
+    <div class="container mx-auto px-4 max-w-screen-sm text-center">
+      <h1 class="text-3xl sm:text-5xl font-bold mb-4">The Strategy Forge</h1>
+      <p class="text-lg sm:text-xl mb-8">
+        AI, Cybersecurity, and Digital Insight—Tempered by Experience, Delivered with Clarity.
+      </p>
+      <div class="flex flex-col sm:flex-row sm:justify-center sm:items-center gap-4">
+        <a href="https://calendly.com/jamesrichmond/free-strategy-session" 
+           class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+          Book a Strategy Session
+        </a>
+        <a href="#newsletter" 
+           class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+          Join Newsletter
+        </a>
+        <a href="/blog" 
+           class="bg-blue-600 px-6 py-3 rounded-full text-white font-medium hover:bg-blue-700 transition">
+          Visit Blog
+        </a>
+        <a href="#onboarding" 
+           class="bg-purple-700 px-6 py-3 rounded-full text-white font-medium hover:bg-purple-800 transition">
+          Start Onboarding
+        </a>
       </div>
     </div>
   </section>
-
-  <section id="portfolio" class="px-8 py-12 max-w-4xl mx-auto animate-slide-in">
-    <h2 class="text-3xl font-semibold text-center mb-8">Work We’re Proud Of</h2>
-    <ul class="space-y-4 text-lg list-disc list-inside">
-      <li><a href="zero-trust.html" class="text-indigo-400 hover:underline">Redesigning a Zero Trust Network for a School District</a></li>
-      <li><a href="ai-finance.html" class="text-indigo-400 hover:underline">Designing an AI-Powered Financial Insights Assistant</a></li>
-    </ul>
-  </section>
-
-  <section id="contact" class="bg-gray-800 px-8 py-12 text-center animate-fade-in">
-    <h2 class="text-3xl font-semibold mb-4">Let’s Forge Your Strategy</h2>
-    <form id="contact-form" action="https://formspree.io/f/xnndkpza" method="POST" class="max-w-lg mx-auto">
-      <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-3 rounded text-gray-900" required>
-      <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded text-gray-900" required>
-      <textarea name="message" placeholder="How can I help you?" rows="4" class="w-full mb-4 p-3 rounded text-gray-900" required></textarea>
-      <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 px-6 py-2 rounded font-semibold">Send Message</button>
-      <p id="form-status" class="mt-4 text-sm"></p>
-    </form>
-    <script>
-      const form = document.getElementById('contact-form');
-      const status = document.getElementById('form-status');
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const data = new FormData(form);
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          status.textContent = '✅ Message sent successfully!';
-          form.reset();
-        } else {
-          status.textContent = '❌ There was an error sending your message.';
-        }
-      });
-    </script>
-    <div class="mt-8">
-      <h3 class="text-xl font-semibold">Prefer to book a time?</h3>
-      <a href="https://calendly.com/jamestrichmond/free-strategy-session" target="_blank" class="inline-block mt-4 bg-indigo-500 hover:bg-indigo-700 px-6 py-3 rounded font-semibold">Schedule on Calendly</a>
-    </div>
-    <div class="mt-12">
-  <h3 class="text-xl font-semibold mb-4">Join The Forge Dispatch</h3>
-  <form id="newsletter-form" action="https://formspree.io/f/mzzrlejr" method="POST" aria-label="Newsletter Signup" class="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
-    <input type="email" name="email" placeholder="Enter your email" required class="p-3 rounded text-gray-900 w-full sm:w-auto">
-    <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 px-6 py-2 rounded font-semibold">Subscribe</button>
-    <p id="newsletter-status" class="text-sm mt-2 sm:mt-0 sm:ml-4"></p>
-  </form>
-</div>
-
-<script>
-  const newsletterForm = document.getElementById('newsletter-form');
-  const newsletterStatus = document.getElementById('newsletter-status');
-  newsletterForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const data = new FormData(newsletterForm);
-    const response = await fetch(newsletterForm.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-      newsletterStatus.textContent = '✅ Subscribed successfully!';
-      newsletterForm.reset();
-    } else {
-      newsletterStatus.textContent = '❌ There was an error subscribing. Please try again.';
-    }
-  });
-</script>
-    </div>
-  </section>
-
-  <style>
-    @keyframes fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .animate-fade-in {
-      animation: fade-in 2s ease-in forwards;
-    }
-
-    @keyframes slide-in {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .animate-slide-in {
-      animation: slide-in 2s ease-out forwards;
-    }
-  </style>
 </body>
 </html>
