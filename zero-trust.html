@@ -1,1 +1,246 @@
-{"name": "zero_trust_page", "type": "code/html", "content": "<!DOCTYPE html>\n<html lang="en">\n\n<head>\n <meta charset="UTF-8" />\n <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n <title>Zero Trust | Strategy Forge</title>\n <script src="https://cdn.tailwindcss.com\"></script>\n</head>\n\n<body class="bg-gray-900 text-white font-sans">\n <header class="text-center py-16 bg-gradient-to-r from-red-700 via-gray-800 to-red-700 shadow-md">\n <h1 class="text-5xl font-bold mb-4">Zero Trust: Build Security on Skepticism</h1>\n <p class="text-lg text-gray-300 max-w-3xl mx-auto">No perimeter is sacred. No device is trusted. No action is unverified. Welcome to the principle of Zero Trust — where we assume breach and verify every step.</p>\n </header>\n\n <main class="max-w-5xl mx-auto px-6 py-12 space-y-10">\n <section class="bg-gray-800 p-6 rounded-lg shadow-md">\n <h2 class="text-3xl font-semibold text-red-300 mb-4">What Is Zero Trust?</h2>\n <p class="text-gray-300">Zero Trust is a cybersecurity framework centered around the idea that threats exist both inside and outside the network. Rather than automatically trusting anything inside the network, Zero Trust requires verification for every user, device, and data flow. It's a shift from static defenses to dynamic, identity-aware access control.</p>\n </section>\n\n <section class="bg-gray-800 p-6 rounded-lg shadow-md">\n <h2 class="text-2xl font-semibold text-red-300 mb-4">Core Pillars of Zero Trust</h2>\n <ul class="list-decimal list-inside text-gray-300 space-y-2">\n <li>Continuous Verification of Identity, Device, and Context</li>\n <li>Least Privilege Access Across the Board</li>\n <li>Microsegmentation of Workloads and Services</li>\n <li>Encryption of Data in Transit and at Rest</li>\n <li>Real-Time Threat Detection and Adaptive Access Controls</li>\n </ul>\n </section>\n\n <section class="bg-gray-800 p-6 rounded-lg shadow-md">\n <h2 class="text-2xl font-semibold text-red-300 mb-4">Strategic Benefits</h2>\n <p class="text-gray-300 mb-4">Implementing Zero Trust protects your organization from insider threats, lateral movement by attackers, and gaps in legacy access policies. It increases resilience across cloud services, hybrid environments, and remote workforces.</p>\n <p class="text-gray-300">Firms that embrace Zero Trust can expect:</p>\n <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">\n <li>Reduced attack surfaces</li>\n <li>Enhanced incident containment</li>\n <li>Faster regulatory compliance responses</li>\n <li>Stronger endpoint protections</li>\n </ul>\n </section>\n\n <section class="bg-gray-800 p-6 rounded-lg shadow-md">\n <h2 class="text-2xl font-semibold text-red-300 mb-4">Practical Implementation Tips</h2>\n <p class="text-gray-300 mb-4">Getting started with Zero Trust doesn't require a complete overhaul. Here's how to approach the transition:</p>\n <ul class="list-disc list-inside text-gray-300 space-y-2">\n <li>Inventory your assets and classify data by sensitivity</li>\n <li>Implement identity and access management with MFA</li>\n <li>Define and enforce granular policies</li>\n <li>Monitor all traffic and continuously assess behavior</li>\n <li>Use policy engines and enforcement points to adapt in real-time</li>\n </ul>\n </section>\n\n <section class="bg-gray-800 p-6 rounded-lg shadow-md">\n <h2 class="text-2xl font-semibold text-red-300 mb-4">Forge Guidance</h2>\n <p class="text-gray-300">Need help designing your Zero Trust architecture? Let us help. We advise on scalable models that protect from the core, with custom blueprints for identity-aware networks and data-centric policies. Contact us through the <a href="onboarding.html" class="text-red-400 underline">onboarding assistant</a>.</p>\n </section>\n </main>\n\n <footer class="text-center text-sm text-gray-500 py-8 border-t border-gray-700 mt-16">\n <p>© 2025 Strategy Forge | Assume breach. Verify everything. Trust nothing.</p>\n </footer>\n</body>\n\n</html>"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Trust | Strategy Forge</title>
+
+  <!-- Tailwind CDN (for production you’d tree-shake & self-host) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: custom font for headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior:smooth; }
+    h1,h2,h3 { font-family:"Rubik",sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 antialiased leading-relaxed">
+
+  <!-- =========== NAV =========== -->
+  <header class="bg-gray-950/60 backdrop-blur sticky top-0 z-50 shadow-md">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="text-xl font-bold tracking-wider text-red-400 hover:text-red-300">Strategy Forge</a>
+      <button id="navToggle" class="sm:hidden p-2 rounded hover:bg-gray-800 focus:outline-none">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+      <ul id="navMenu" class="hidden sm:flex gap-6 text-sm font-medium">
+        <li><a class="hover:text-red-300" href="index.html">Home</a></li>
+        <li><a class="hover:text-red-300" href="blog.html">Blog</a></li>
+        <li><a class="hover:text-red-300" href="#pillars">Pillars</a></li>
+        <li><a class="hover:text-red-300" href="#faq">FAQ</a></li>
+        <li><a class="hover:text-red-300" href="onboarding.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========== HERO =========== -->
+  <section class="bg-gradient-to-r from-red-700 via-gray-800 to-red-700 py-24 shadow-inner">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-6">Zero Trust: Build Security on Skepticism</h1>
+      <p class="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
+        No perimeter is sacred. No device is trusted. No action is unverified.  
+        Assume <em>breach by default</em> and validate <strong>every</strong> step.
+      </p>
+      <a href="onboarding.html"
+         class="inline-block mt-10 px-8 py-3 rounded-lg bg-red-500 hover:bg-red-600 transition">
+        Talk to an Architect →
+      </a>
+    </div>
+  </section>
+
+  <!-- =========== MAIN =========== -->
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- What is ZT? -->
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold text-red-300 mb-4">What Is Zero Trust?</h2>
+        <p class="text-gray-300 mb-4">
+          Zero Trust is a security framework that treats every person, device, and process
+          as potentially hostile until it proves otherwise. Verification is continuous and contextual,
+          shifting you from static castle-and-moat defenses to dynamic identity-aware protection.
+        </p>
+        <p class="text-gray-300">
+          It is <span class="font-medium">not</span> a product you buy.  
+          It’s a strategy you weave through authentication, networking, data
+          governance, and incident response.
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <!-- simple illustration using CSS shapes -->
+        <div class="relative w-64 h-64">
+          <div class="absolute inset-0 rounded-full bg-red-700/20 animate-ping"></div>
+          <div class="absolute inset-6 rounded-full bg-red-700/30 animate-pulse"></div>
+          <div class="absolute inset-12 rounded-full bg-red-700/40"></div>
+          <span class="absolute inset-0 flex items-center justify-center text-sm text-gray-300">
+            Verify<br/>Every<br/>Step
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section id="pillars">
+      <h2 class="text-3xl font-semibold text-red-300 mb-8">Core Pillars of Zero Trust</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Pillar card -->
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">Continuous Verification</h3>
+          <p class="text-gray-400 text-sm">
+            Authenticate identity, device posture, and context <em>every time</em>
+            a request is made—no grandfathered sessions.
+          </p>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">Least-Privilege Access</h3>
+          <p class="text-gray-400 text-sm">
+            Grant the minimum rights necessary, scoped to task and duration,
+            then automatically revoke or re-authorize as conditions change.
+          </p>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">Micro-Segmentation</h3>
+          <p class="text-gray-400 text-sm">
+            Break the implicit trust between workloads; contain lateral movement
+            by encrypting and policy-enforcing each service-to-service hop.
+          </p>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">Data Encryption</h3>
+          <p class="text-gray-400 text-sm">
+            Protect data in transit and at rest to render stolen packets useless
+            and simplify compliance cross-border.
+          </p>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">Adaptive Policy</h3>
+          <p class="text-gray-400 text-sm">
+            Use real-time threat intel, UEBA signals, and risk scores to <em>raise</em>
+            or <em>lower</em> access dynamically.
+          </p>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="font-medium text-xl mb-2">End-to-End Visibility</h3>
+          <p class="text-gray-400 text-sm">
+            Capture, correlate, and analyze every flow—giving responders the
+            evidence they need within minutes, not days.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Strategic Benefits -->
+    <section>
+      <h2 class="text-3xl font-semibold text-red-300 mb-4">Strategic Benefits</h2>
+      <ul class="space-y-3 list-disc list-inside text-gray-300">
+        <li><strong>Reduced Attack Surface —</strong> isolate crown-jewel assets and shrink exposure windows.</li>
+        <li><strong>Containment by Design —</strong> limit lateral movement so one compromised workload doesn’t topple the castle.</li>
+        <li><strong>Regulatory Momentum —</strong> map controls to NIST 800-207, HIPAA, PCI-DSS, and emerging AI safety laws.</li>
+        <li><strong>Endpoint Fortification —</strong> tie device posture into identity to block jail-broken or out-of-policy hardware.</li>
+      </ul>
+    </section>
+
+    <!-- Implementation Roadmap -->
+    <section>
+      <h2 class="text-3xl font-semibold text-red-300 mb-4">Roadmap to Implementation</h2>
+      <ol class="border-l-2 border-red-500 pl-6 space-y-6">
+        <li>
+          <h3 class="font-medium text-lg">1. Asset &amp; Data Discovery</h3>
+          <p class="text-gray-400 text-sm">
+            Inventory every endpoint, workload, API, identity provider, and data lake.
+            Classify sensitivity and map communication paths.
+          </p>
+        </li>
+        <li>
+          <h3 class="font-medium text-lg">2. Identity &amp; Access Foundation</h3>
+          <p class="text-gray-400 text-sm">
+            Centralize IAM, enable phishing-resistant MFA, and federate to SaaS.
+          </p>
+        </li>
+        <li>
+          <h3 class="font-medium text-lg">3. Micro-Segment &amp; Encrypt</h3>
+          <p class="text-gray-400 text-sm">
+            Deploy software-defined perimeters or service meshes to granularly
+            control east-west traffic and encrypt by default.
+          </p>
+        </li>
+        <li>
+          <h3 class="font-medium text-lg">4. Continuous Monitoring</h3>
+          <p class="text-gray-400 text-sm">
+            Stream logs into a modern SIEM/SOAR; correlate with threat intel feeds
+            to automate containment.
+          </p>
+        </li>
+        <li>
+          <h3 class="font-medium text-lg">5. Iterate, Test, Repeat</h3>
+          <p class="text-gray-400 text-sm">
+            Run tabletop exercises, purple-team drills, and policy drift audits on a
+            quarterly cadence.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2 class="text-3xl font-semibold text-red-300 mb-6">Frequently Asked Questions</h2>
+      <div class="divide-y divide-gray-700">
+        <details class="py-4">
+          <summary class="cursor-pointer font-medium">Does Zero Trust break user productivity?</summary>
+          <p class="mt-2 text-gray-400 text-sm">
+            When rolled out incrementally with adaptive session handling, users barely
+            notice—except in the form of fewer phishing compromises and faster VPN-less access.
+          </p>
+        </details>
+        <details class="py-4">
+          <summary class="cursor-pointer font-medium">Can legacy apps participate?</summary>
+          <p class="mt-2 text-gray-400 text-sm">
+            Yes. Deploy reverse proxies, VDI, or client-less ZTNA wrappers to inject auth,
+            encryption, and logging without recoding the app itself.
+          </p>
+        </details>
+        <details class="py-4">
+          <summary class="cursor-pointer font-medium">What KPIs prove success?</summary>
+          <p class="mt-2 text-gray-400 text-sm">
+            Track dwell time, mean time to contain, policy-violation rate, and percent of
+            traffic subject to verified identity.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- =========== CTA =========== -->
+    <section class="text-center mt-24">
+      <h2 class="text-3xl font-semibold mb-4">Ready to Forge Your Zero-Trust Blueprint?</h2>
+      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+        Strategy Forge consultants can embed alongside your SecOps, DevOps, and
+        compliance teams to de-risk transformation while accelerating ROI.  
+        Book a whiteboard session—first one’s on us.
+      </p>
+      <a href="onboarding.html"
+         class="inline-block px-10 py-4 rounded-full bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-700/50">
+        Schedule a Call →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="border-t border-gray-800 mt-24 py-10 text-center text-sm text-gray-500">
+    © 2025 Strategy Forge — Assume breach. Verify everything. Trust nothing.
+  </footer>
+
+  <!-- Mobile nav toggle -->
+  <script>
+    const btn = document.getElementById('navToggle');
+    const menu = document.getElementById('navMenu');
+    btn?.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
