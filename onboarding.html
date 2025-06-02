@@ -1,55 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdn.tailwindcss.com"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strategy Forge Onboarding</title>
+  <title>Strategy Forge | Onboarding</title>
+  <!-- Include the same compiled Tailwind + custom config that the homepage uses -->
+  <link href="css/style.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <header class="bg-gray-800 p-8 text-center shadow-md">
-    <h1 class="text-4xl font-bold text-indigo-400">Welcome to the Forge</h1>
-    <p class="text-gray-300 mt-2">This is your first step into Strategy Forge’s ecosystem of digital resilience and unapologetic curiosity.</p>
+<body class="bg-gray-900 text-white font-sans min-h-screen">
+  <!-- ===========================
+       Site Header / Navigation
+       =========================== -->
+  <header class="bg-gradient-to-r from-purple-600 to-indigo-600">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <!-- Logo / Site Title -->
+      <h1 class="text-white text-2xl font-bold">
+        The Strategy Forge
+      </h1>
+
+      <!-- Navigation Links -->
+      <nav class="space-x-6">
+        <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+        <a href="dispatch.html" class="text-white hover:text-gray-200">Dispatch</a>
+        <a href="blog.html" class="text-white hover:text-gray-200">Blog</a>
+        <a href="onboarding.html" class="text-white hover:text-gray-200">Start Intake</a>
+      </nav>
+    </div>
   </header>
-  <main class="max-w-4xl mx-auto py-10 px-6">
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-indigo-300 mb-2">Orientation</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
+
+  <!-- ===========================
+       Onboarding Hero / Banner
+       =========================== -->
+  <section class="bg-gray-900 border-b border-gray-700">
+    <div class="max-w-4xl mx-auto px-6 py-12 text-center">
+      <h2 class="text-4xl font-extrabold text-indigo-300">
+        Welcome to the Forge
+      </h2>
+      <p class="mt-4 text-gray-300">
+        Your first step into Strategy Forge’s ecosystem of digital resilience and unapologetic curiosity.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===========================
+       Main Onboarding Content
+       =========================== -->
+  <main class="max-w-4xl mx-auto px-6 py-10 space-y-16">
+    <!-- Orientation Section -->
+    <section>
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">
+        Orientation
+      </h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
         <li>Understand the purpose behind every engagement</li>
         <li>Know your primary point of contact and escalation channels</li>
         <li>Subscribe to the dispatch for context-rich updates</li>
         <li>Align on shared language and strategic frameworks</li>
       </ul>
     </section>
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-indigo-300 mb-2">Logistics & Expectations</h2>
-      <p class="text-gray-300 mb-2">Engagements follow a rhythm: strategic scoping, rapid ideation, iterative deployment, retrospectives.</p>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>Preferred tools: Slack, ProtonMail, Notion, Google Docs</li>
-        <li>Weekly syncs or async summaries</li>
-        <li>Version-controlled docs for all delivery</li>
-      </ul>
-    </section>
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-indigo-300 mb-2">Our Values</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li><strong>🔥 Clarity over jargon:</strong> Clean communication, deep intent.</li>
-        <li><strong>🛡️ Security is a default:</strong> Not an afterthought.</li>
-        <li><strong>🧠 Strategic irreverence:</strong> Question norms. But with logic.</li>
-        <li><strong>🔍 Intellectual honesty:</strong> If it’s broken, we fix it. If it’s wrong, we say it.</li>
-      </ul>
-    </section>
+
+    <!-- Logistics & Expectations Section -->
     <section>
-      <h2 class="text-2xl font-semibold text-indigo-300 mb-2">Quick Access</h2>
-      <ul class="text-indigo-400 list-disc list-inside">
-        <li><a href="newsletter.html" class="hover:underline">📬 Dispatch</a></li>
-        <li><a href="thank-you.html" class="hover:underline">✅ Thank You Page</a></li>
-        <li><a href="https://github.com/JamesTRichmond" class="hover:underline" target="_blank">💻 GitHub Projects</a></li>
-        <li><a href="mailto:jamestechnomage@gmail.com" class="hover:underline">📩 Contact James</a></li>
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">
+        Logistics &amp; Expectations
+      </h3>
+      <p class="text-gray-300 mb-4">
+        Our engagements follow a clear rhythm: strategic scoping, rapid ideation, iterative deployment, and retrospectives. We use secure communication channels, version-controlled documentation, and agile collaboration tools. Whether you’re here for a zero-trust workshop or a full-stack cyber audit, you’ll know what’s happening, why, and when.
+      </p>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Preferred tools: Slack, ProtonMail, Notion, Google Docs</li>
+        <li>Weekly syncs (live) or asynchronous summaries by default</li>
+        <li>Version-controlled docs for all deliverables</li>
       </ul>
+    </section>
+
+    <!-- Our Values Section -->
+    <section>
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">
+        Our Values
+      </h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>
+          <span class="font-semibold text-white">🔥 Clarity over jargon:</span> Clean communication, deep intent.
+        </li>
+        <li>
+          <span class="font-semibold text-white">🛡️ Security is a default:</span> Not an afterthought.
+        </li>
+        <li>
+          <span class="font-semibold text-white">🧠 Strategic irreverence:</span> Question norms. But with logic.
+        </li>
+        <li>
+          <span class="font-semibold text-white">🔍 Intellectual honesty:</span> If it’s broken, we fix it. If it’s wrong, we say it.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section>
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">
+        Quick Access
+      </h3>
+      <ul class="list-disc list-inside text-indigo-400 space-y-2">
+        <li>
+          <a href="newsletter.html" class="hover:underline">📬 Go Forge Yourself Dispatch</a>
+        </li>
+        <li>
+          <a href="thank-you.html" class="hover:underline">✅ Thank You Page</a>
+        </li>
+        <li>
+          <a href="https://github.com/JamesTRichmond" class="hover:underline" target="_blank">💻 GitHub Projects</a>
+        </li>
+        <li>
+          <a href="mailto:jamestechnomage@gmail.com" class="hover:underline">📩 Contact James</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Culture & Community Section -->
+    <section>
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">
+        Culture &amp; Community
+      </h3>
+      <p class="text-gray-300">
+        We blend serious work with signature weirdness. If you’re looking for corporate speak, this isn’t it. We prefer deep dives, wild ideas, elegant briefs, and gritty prototypes. Be generous with credit, fast with feedback, and bold with questions. The forge is open — keep it blazing.
+      </p>
+      <p class="mt-4 text-gray-300 italic">
+        We don’t micromanage. We micromaster.
+      </p>
     </section>
   </main>
-  <footer class="text-center text-sm text-gray-500 py-6">
+
+  <!-- ===========================
+       Site Footer
+       =========================== -->
+  <footer class="border-t border-gray-700 text-center text-sm text-gray-500 py-6">
     <p>© 2025 Strategy Forge | Built on candor, chaos, and craftsmanship.</p>
   </footer>
 </body>
