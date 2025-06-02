@@ -4,13 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strategy Forge | Onboarding</title>
-  <!-- Include the same compiled Tailwind + custom config that the homepage uses -->
-  <link href="css/style.css" rel="stylesheet" />
+  <!-- ← Pull in Tailwind’s CDN so that “bg-gradient-to-r from-purple-600 to-indigo-600” etc. all work -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: if you need to extend Tailwind’s default color palette or add plugins,
+       you can uncomment & adapt the block below. As long as you don’t have a built
+       style.css on GitHub Pages, you can control everything via this inline config.
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // If your homepage uses custom purples/indigos beyond Tailwind’s defaults,
+            // copy those here.  For example:
+            // purple: {
+            //   600: '#7e22ce',
+            //   700: '#6b21a8',
+            // },
+            // indigo: {
+            //   600: '#4f46e5',
+            // },
+          }
+        }
+      },
+      plugins: [
+        // require('@tailwindcss/typography'),
+        // require('@tailwindcss/forms'),
+      ]
+    }
+  </script>
+  -->
 </head>
 <body class="bg-gray-900 text-white font-sans min-h-screen">
-  <!-- ===========================
+  <!-- ========================
        Site Header / Navigation
-       =========================== -->
+       ======================== -->
   <header class="bg-gradient-to-r from-purple-600 to-indigo-600">
     <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
       <!-- Logo / Site Title -->
@@ -28,9 +57,9 @@
     </div>
   </header>
 
-  <!-- ===========================
+  <!-- ========================
        Onboarding Hero / Banner
-       =========================== -->
+       ======================== -->
   <section class="bg-gray-900 border-b border-gray-700">
     <div class="max-w-4xl mx-auto px-6 py-12 text-center">
       <h2 class="text-4xl font-extrabold text-indigo-300">
@@ -42,9 +71,9 @@
     </div>
   </section>
 
-  <!-- ===========================
+  <!-- ========================
        Main Onboarding Content
-       =========================== -->
+       ======================== -->
   <main class="max-w-4xl mx-auto px-6 py-10 space-y-16">
     <!-- Orientation Section -->
     <section>
@@ -130,9 +159,9 @@
     </section>
   </main>
 
-  <!-- ===========================
+  <!-- ========================
        Site Footer
-       =========================== -->
+       ======================== -->
   <footer class="border-t border-gray-700 text-center text-sm text-gray-500 py-6">
     <p>© 2025 Strategy Forge | Built on candor, chaos, and craftsmanship.</p>
   </footer>
